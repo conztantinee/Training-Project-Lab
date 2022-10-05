@@ -1,0 +1,27 @@
+Ecommerce for Books
+
+Features:
+
+-database about available products, name/title/price/stock number/id etc
+
+-admin panel
+
+-database about users and their purchase history 
+
+- wishlist
+
+- user must be able to login, create account, A/A 
+
+- search for products, specific authors, titles
+
+- browse by categories, new products, discounts
+
+- find desired book from text part
+
+- user can do shopping via adding to the cart and delete from the cart
+
+Planned API for using: https://openlibrary.org/developers/api
+
+Tech stack: React, Node.js, MongoDB
+
+
