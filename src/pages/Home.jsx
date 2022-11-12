@@ -1,9 +1,9 @@
 import React from 'react'
 import Nav from '../components/Nav'
 
-const welcomePage = () => {
+const Home = () => {
   return (
-    <div >
+    <div>
         
         <Nav/>
         
@@ -11,4 +11,4 @@ const welcomePage = () => {
   )
 }
 
-export default welcomePage
+export default Home
