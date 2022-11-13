@@ -6,7 +6,10 @@ import ShoppingCartOutlined from '@material-ui/icons/Search';
 
 
 
-const Container=styled.div``
+const Container=styled.div`
+height: 60px;
+background-color: cornflowerblue;
+`;
 
 const Wrapper=styled.div`
 padding: 10px 20px;
