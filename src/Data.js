@@ -21,3 +21,20 @@ export const sliderItems = [
       
     },
   ];
+  export const categories = [
+    {
+      id: 1,
+      img: "",
+      title: "",
+    },
+    {
+      id: 2,
+      img: "",
+      title: "",
+    },
+    {
+      id: 3,
+      img: "",
+      title: "",
+    },
+  ];
