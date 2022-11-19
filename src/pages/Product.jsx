@@ -1,6 +1,7 @@
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Navbar from "../components/Nav";
+import React from "react";
 
 const Container = styled.div``;
 

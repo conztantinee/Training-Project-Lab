@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Nav from "../components/Nav";
 import Products from "../components/Products";
+import React from "react";
 
 const Container = styled.div``;
 
@@ -35,9 +36,8 @@ const Option = styled.option``;
 const ProductList = () => {
   return (
     <Container>
-      <Nav/>
-      
-      <Title>Dresses</Title>
+      <Nav/>     
+      <Title>Sci-Fi</Title>
       <FilterContainer>
         <Filter>
           <FilterText>Filter Products:</FilterText>
