@@ -3,7 +3,7 @@ export const sliderItems = [
       id: 1,
       img: "https://media.istockphoto.com/id/1346036453/photo/books-bookcase-shop-self-background.jpg?s=1024x1024&w=is&k=20&c=v1idgmWq1WvV2oHRp5sAuP37xE6MViXqMO-wBvmez-s=",
       title: "BUY BOOKS HERE, NOW!!!",
-      desc: "WE HAVE ALL OF THEM",
+      desc: "WE HAVE THEM ALL",
       
     },
     {
@@ -38,3 +38,18 @@ export const sliderItems = [
       title: "",
     },
   ];
+
+  export const popularProducts = [
+    {
+      id:1,
+      img:"",
+    },
+    {
+      id:2,
+      img:"",
+    },
+    {
+      id:3,
+      img:"",
+    },
+  ]
