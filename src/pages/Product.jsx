@@ -13,7 +13,7 @@ const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
-  
+  backgroundImage: url("https://miro.medium.com/max/926/1*37LN1kKRKVPnb7niQPX9_g.jpeg")
 `;
 
 const ImgContainer = styled.div`
@@ -115,8 +115,6 @@ const Product = () => {
   const id = location.pathname.split("/")[2];
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
-  const [color, setColor] = useState("");
-  const [size, setSize] = useState("");
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -148,7 +146,7 @@ const Product = () => {
       <Navbar />     
       <Wrapper>
         <ImgContainer>
-          <Image src="" />
+          <Image src={product.img} />
         </ImgContainer>
         <InfoContainer>
         <Title>{product.title}</Title>
@@ -157,11 +155,11 @@ const Product = () => {
           <FilterContainer>
             
             <Filter>
-              <FilterTitle>something</FilterTitle>
+              <FilterTitle>language</FilterTitle>
               <FilterBook>
-                <FilterBookOption>a</FilterBookOption>
-                <FilterBookOption>b</FilterBookOption>
-                <FilterBookOption>c</FilterBookOption>
+                <FilterBookOption>English</FilterBookOption>
+                <FilterBookOption>Hungarian</FilterBookOption>
+                <FilterBookOption>Chinese</FilterBookOption>
               </FilterBook>
             </Filter>
           </FilterContainer>

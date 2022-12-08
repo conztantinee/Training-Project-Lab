@@ -11,7 +11,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("")
+    url("https://miro.medium.com/max/926/1*37LN1kKRKVPnb7niQPX9_g.jpeg")
       center;
   background-size: cover;
   display: flex;
@@ -77,7 +77,10 @@ const Login = () => {
     e.preventDefault();
     login(dispatch, { username, password });
   };
+
+  console.log(error);
   return (
+
     <Container>
       <Wrapper>
         <Title>SIGN IN</Title>

@@ -1,6 +1,12 @@
 import React from 'react'
 import styled from "styled-components";
 
+
+const handleClick = async () => {
+  fetch('http://localhost:3001/', { method: 'POST' })
+  .then(data => data.json()) 
+  .then(json => alert(JSON.stringify(json))) };
+
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -8,7 +14,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("")
+    url("https://miro.medium.com/max/926/1*37LN1kKRKVPnb7niQPX9_g.jpeg")
       center;
   background-size: cover;
   display: flex;
@@ -69,7 +75,7 @@ const Register = () => {
             By creating an account, I consent to the processing of my personal
             data in accordance with the <b>PRIVACY POLICY</b>
           </Agreement>
-          <Button>CREATE</Button>
+          <Button onClick={handleClick}>CREATE</Button>
         </Form>
       </Wrapper>
     </Container>
