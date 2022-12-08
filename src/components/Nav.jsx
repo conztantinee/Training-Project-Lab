@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import {Badge}  from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartOutlined from '@material-ui/icons/Search';
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 
 
@@ -55,6 +57,7 @@ align-items: center;
 justify-content: flex-end;`;
 
 const Nav = () => {
+  const quantity = useSelector(state=>state.cart.quantity)
   return (
     <Container>  
         <Wrapper>
@@ -69,11 +72,13 @@ const Nav = () => {
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
+          <Link to="/cart">
           <MenuItem>
-            <Badge badgeContent={4} color="primary">
+            <Badge badgeContent={quantity} color="primary">
               <ShoppingCartOutlined />
             </Badge>
-          </MenuItem>  
+          </MenuItem>
+          </Link>  
         </Right>    
         </Wrapper>    
     </Container>
